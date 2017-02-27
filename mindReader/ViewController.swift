@@ -10,14 +10,39 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    @IBOutlet weak var questionLabel: UILabel!
+    
+    @IBOutlet weak var answerTxtField: UITextField!
+    
+    var questionNo = 2
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     
     
     
     
+    
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        answerTxtField.text = ""
+        answerTxtField.isHidden = true
+    }
+    
+    
+    @IBAction func nextBtnPressed(_ sender: UIButton) {
+        
+    }
+    
+    
 
+    
+    
+    
 }
 
